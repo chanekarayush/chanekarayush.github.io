@@ -1,0 +1,108 @@
+.noise {
+  border-radius: 40px;
+  opacity: 0.7;
+  background: url("https://www.figma.com/file/V8NzgdAp1LxQTtpb8DfJis/image/7d963ad9810c7db21ad112bf4ec1ae4f5a32e923?fuid=1254724213100957448"),
+    lightgray 0% 0% / 100px 100px repeat;
+  mix-blend-mode: overlay;
+}
+.about-text {
+  justify-content: left;
+  display: grid;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  mix-blend-mode: normal;
+  padding: 0 1vw 0 1vw;
+  margin: 8dvh 0 8dvh 0;
+}
+.about-text a,
+.about-text a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+#about-link {
+  font-size: clamp(0.5rem, 1.5vw, 2rem);
+}
+#about-name {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+#about-designation {
+  font-size: clamp(0.5rem, 1.5vw, 2rem);
+}
+
+.card {
+  align-items: center;
+  place-content: center;
+  justify-content: center;
+  align-self: center;
+  /* width: 1920px;
+    height: 1080px; */
+  width: 40vw;
+  height: 25vw;
+  border-radius: 20px;
+  background: radial-gradient(
+    331.49% 141.42% at -0% 0%,
+    rgba(228, 228, 228, 0.747) 0%,
+    rgba(217, 217, 217, 0.486) 10%,
+    rgba(217, 217, 217, 0.301) 20%,
+    rgba(217, 217, 217, 0.174) 40%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(40px);
+  overflow: hidden;
+  /* border: 10px solid; */
+  /* border-image: ; */
+}
+.bodyimg {
+  /* position: absolute; */
+  padding: 10%;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/card-bg.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+  margin: 1rem;
+}
+.about-text a:hover {
+  opacity: 0.5;
+}
+.gradient-border-mask {
+  /* position: absolute;
+    border: 10px solid #ffffff;
+    border-image-source: linear-gradient(135deg, #ffffffca, #83838396, #2626264e);
+    border-radius: 40px;
+    border-image-slice: 40;
+    float: left; 
+    padding: 20px;
+    margin-right: 13.5vw;
+    mask-border-width: 100px;
+    mask-border: linear-gradient(135deg, #ffffffca, #83838396, #2626264e) border-box; */
+  /* padding: 10px; */
+  display: inline-block;
+  /* margin: 75px 0; */
+  position: relative;
+  background-blend-mode: overlay;
+  z-index: 0;
+}
+.gradient-border-mask::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 0.15rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffffff, #838383, #262626);
+  -webkit-mask: linear-gradient(hsla(0, 0%, 50%, 0.7) 0 0) content-box,
+    linear-gradient(hsla(0, 0%, 29%, 0.7) 0 0);
+  mask: linear-gradient(hsl(0, 0%, 50%, 0.7) 0 0) content-box,
+    linear-gradient(hsl(0, 0%, 29%, 0.7) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
