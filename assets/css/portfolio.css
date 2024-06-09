@@ -27,6 +27,7 @@
   --h-grad-4: rgba(217, 217, 217, 0.509);
   --h-grad-5: rgba(217, 217, 217, 0.311);
   --text-bg: #efd9ce;
+  /* --img-feature: "../img/project-4.jpg"; */
 }
 
 .dark-mode {
@@ -47,6 +48,7 @@
   --h-grad-4: rgba(217, 217, 217, 0.756);
   --h-grad-5: rgba(228, 228, 228, 0.991);
   --text-bg: #453a49;
+  /* --img-feature: "../img/project-5.jpg"; */
 }
 body {
   background: var(--primarybg);
@@ -178,7 +180,7 @@ header {
   margin: 1rem;
   display: grid;
   place-items: center;
-  background-image: url("../img/project-2.jpg");
+  background-image: url("../img/project-4.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
